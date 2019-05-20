@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Paralax-Hero-Banner.css">
+    <link rel="stylesheet" href="assets/css/Paralax-Hero-Banner.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="jumbotron hero-technology">
+        <h1 class="hero-title" style="background-color:rgba(59,89,147,0.72);">Post Share</h1>
+        <form>
+        <p class="hero-subtitle">Share your post on facebook twitter and Linkedin&nbsp;</p>
+        <input type="text" id="url" name="url"  style="width: 100%; height: 100%" class="form-control" placeholder="URL" onblur="setURL(this)">
+        </form>
+        <p><button class="share btn btn-primary btn-lg hero-button" role="button" href="#" style="margin:3px;padding:9px;" data-sharer="facebook" data-url="" data-title="Assignment" id="fb">Facebook</button><button id="tw" class="share btn btn-primary btn-lg hero-button" role="button" href="#" style="margin:19px;" data-sharer="twitter" data-url="" data-title="Assignment">Twitter</button>
+            <button class="btn btn-primary btn-lg hero-button share"
+                role="button" id="lin" href="#" data-sharer="linkedin" data-title="Assignment" data-url="">Linkedin</button></p>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Paralax-Hero-Banner.js"></script>
+    <script type="text/javascript">
+        function setURL(e){
+            document.getElementById("fb").dataset.url = e.value;
+            document.getElementById("tw").dataset.url = e.value;
+            document.getElementById("lin").dataset.url = e.value;
+        }
+    </script>
+    <script src="sharer.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>
